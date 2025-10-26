@@ -1,0 +1,123 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+#main-content {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    transition: filter 0.3s;
+}
+#editor {
+    width: 80%;
+    height: 60vh;
+    margin: 40px auto 20px auto;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+}
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+#projects {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background: #f1f1f1;
+    border-right: 1px solid #dedede;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+#projects h3 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 8px;
+}
+
+#projectList {
+    margin: 0;
+    padding: 0;
+}
+
+#projectList li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+#projectList li:hover {
+    background-color: #e8e8e8 !important;
+}
+
+.btn {
+    padding: 8px 15px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+}
+#output {
+    margin: 30px auto;
+    width: 80%;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    padding: 10px;
+    min-height: 32px;
+}
+.modal-bg {
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(8px);
+    background: rgba(200,200,200,0.2);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal {
+    background: #fff;
+    padding: 38px 24px;
+    border-radius: 9px;
+    box-shadow: 0 2px 22px #88888888;
+    min-width: 340px;
+    text-align: center;
+    position: relative;
+}
+.modal input[type="text"], .modal input[type="password"], .modal input[type="email"] {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.modal .btn {
+    background: #4caf50;
+}
+.modal-link {
+    color: #449e2c;
+    cursor: pointer;
+}
+
+/* Google button */
+.google-btn {
+    background: #db4437;
+    margin-top: 10px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Compiler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-content">
+        <div id="projects">
+            <h3>Projects</h3>
+                <ul id="projectList"></ul>
+        </div>
+        <div style="margin-left:220px;">
+            <div id="buttons">
+                <button class="btn" id="clearBtn">Clear</button>
+                <button class="btn" id="saveBtn">Save</button>
+                <!--<button class="btn" id="compileBtn">Compile</button> -->
+                <button class="btn" id="runBtn">Run</button>
+                <button class="btn" id="newClassBtn">New Class</button>
+            </div>
+            <textarea id="editor" placeholder="Write your Java code here..." rows="18"></textarea>
+            <div id="output"></div>
+        </div>
+    </div>
+
+     <!-- Signup Modal -->
+    <div id="signupModal" class="modal-bg">
+        <div class="modal">
+            <h1 style="color: #4caf50;">Online Compiler</h1>
+            <h2>Signup</h2>
+            <input type="email" id="signupEmail" placeholder="Email"><br>
+            <input type="text" id="signupUsername" placeholder="Username"><br>
+            <input type="password" id="signupPassword" placeholder="Password"><br>
+            <button class="btn" id="signupBtn">Signup</button>
+            <div style="margin-top:14px;">
+                Already have an account? <span class="modal-link" onclick="showLogin()">Login</span>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal-bg" style="display:none;">
+        <div class="modal">
+            <h1 style="color: #4caf50;">Online Compiler</h1>
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Username"><br>
+            <input type="password" id="loginPassword" placeholder="Password"><br>
+            <button class="btn" id="loginBtn">Login</button>
+            <br><br>
+            <button class="btn google-btn" id="googleLoginBtn">Sign in with Google</button>
+            <div style="margin-top:14px;">
+                Don't have an account? <span class="modal-link" onclick="showSignup()">Signup</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
